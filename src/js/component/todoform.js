@@ -8,7 +8,7 @@ export const ToDoForm = (props) => {
 	return (
 		<React.Fragment>
 			<input
-				className="form-control shadow px-4 py-2"
+				className="form-control shadow px-4 py-2 bg-white"
 				placeholder="What needs to be done?"
 				value={newTask}
 				onChange={(evento) => {
@@ -25,7 +25,7 @@ export const ToDoForm = (props) => {
 			<div className="task-list">
 				{toDos.map((task, index) => {
 					return (
-						<div className="form-control toDoElement px-4 py-2 d-flex flex-row flex-nowrap justify-content-between">
+						<div className="form-control toDoElement shadow px-4 py-2 d-flex flex-row flex-nowrap justify-content-between bg-white">
 							<ToDoItem key={index} task={task} />
 							<span
 								className="delete"
@@ -45,8 +45,9 @@ export const ToDoForm = (props) => {
 						</div>
 					);
 				})}
-				<div id="bottom-1" className="shadow"></div>
-				<div id="bottom-2" className="shadow"></div>
+				<div className="form-control items-counter px-4 py-1 bg-light">
+					{toDos.length} items left
+				</div>
 			</div>
 		</React.Fragment>
 	);

@@ -8,8 +8,10 @@ const Home = () => {
 		<React.Fragment>
 			<div className="container-fluid d-flex flex-column align-items-center">
 				<h1 className="text-center mt-5">todos</h1>
-				<div className="">
+				<div className="to-do-list">
 					<ToDoForm />
+					<div id="bottom-1" className="shadow bg-light"></div>
+					<div id="bottom-2" className="shadow bg-light"></div>
 				</div>
 			</div>
 		</React.Fragment>
