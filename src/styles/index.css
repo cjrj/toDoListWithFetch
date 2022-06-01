@@ -18,11 +18,11 @@ h1 {
     color: #ECDBDC;
 }
 
-.form-control, .toDoElement{
-    width: 70vw;
+.form-control {
+    width: 50vw;
     height: 70px;
     box-shadow: 1px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .form-control, .to-do-list{
@@ -74,4 +74,16 @@ h2 {
     height: 30px;
     box-shadow: 1px;
     font-size: 1em;
+}
+
+.toDoElement{
+    width: 70vw;    
+    height: 70px;
+    font-size: 1.5em;
+}
+
+.task-form {
+    width: 70vw;
+    height: 70px;
+    font-size: 1.5em;
 }
